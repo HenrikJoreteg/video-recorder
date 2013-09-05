@@ -1,0 +1,26 @@
+{
+  "name": "video-recorder",
+  "version": "0.0.1",
+  "description": "Experimental browser module for recording the contents of a video tag.",
+  "main": "./video-recorder.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/HenrikJoreteg/video-recorder"
+  },
+  "keywords": [
+    "browser",
+    "getUserMedia",
+    "WebRTC"
+  ],
+  "author": "Henrik Joreteg <henrik@andyet.net>",
+  "license": "MIT",
+  "dependencies": {
+    "photograb": "0.0.1"
+  },
+  "devDependencies": {
+    "browserify": "2.x",
+    "fauxplay": "0.0.1",
+    "getusermedia": "0.2.1",
+    "attachmediastream": "1.0.1"
+  }
+}
