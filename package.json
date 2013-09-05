@@ -1,7 +1,7 @@
 {
   "name": "video-recorder",
   "version": "0.0.1",
-  "description": "Experimental browser module for recording the contents of a video tag.",
+  "description": "Experimental browser module for recording the contents of a <video> tag.",
   "main": "./video-recorder.js",
   "repository": {
     "type": "git",

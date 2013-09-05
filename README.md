@@ -1,22 +1,20 @@
 # video-recorder
 
-Experimental browser module for recording contents of a `<video>` tag by taking data URI snapshots of it.
+Experimental browser module for recording contents of a `<video>` tag by taking dataURI snapshots of it.
 
-Works out of the box with browserify. If using with AMD or as standalone use video-recorder.bundle.js instead.
+Written as a CommonJS module, so it works out of the box with browserify. If using with AMD or as standalone use `video-recorder.bundle.js` file instead.
 
 Tested primarily in Chrome.
 
 ## why?
 
-You can use it to record and play back video at approximately 10fps in chrome.
+You can use it to record and play back video at approximately 10fps in chrome. I was largely curious how well it would work. Turns out it's not too shabby.
 
-I know of no other pure client-based video recording mechanism.
+The data is stored in an array as Base64 encoded PNGs using dataURIs: https://developer.mozilla.org/en-US/docs/data_URIs. This could be uploaded to a server and stitched into a video file using something like ffmpeg.
 
-The data is stored in an array as Base64 encoded PNGs using dataURIs: https://developer.mozilla.org/en-US/docs/data_URIs.
+But it can also just be played back to the user using: https://github.com/HenrikJoreteg/fauxplay (as seen in the demo).
 
-This could be uploaded to a server and stitched into a video file using something like ffmpeg.
-
-But it can also just be played back to the user using: https://github.com/HenrikJoreteg/fauxplay (as seen in the demo)
+Obviously, there's no sound being recorded, but it could be interesting to mix this with screen capture support for in-browser screencast recordings.
 
 ## installing
 
