@@ -6,6 +6,10 @@ Written as a CommonJS module, so it works out of the box with browserify. If usi
 
 Tested primarily in Chrome.
 
+## demo
+
+See the demo here: http://projects.joreteg.com/video-recorder/
+
 ## why?
 
 You can use it to record and play back video at approximately 10fps in chrome. I was largely curious how well it would work. Turns out it's not too shabby.
@@ -21,10 +25,6 @@ Obviously, there's no sound being recorded, but it could be interesting to mix t
 ```
 npm install video-recorder
 ```
-
-## demo
-
-Run a static webserver and open index.html in Chrome (opening as file:// won't work).
 
 ## example
 
